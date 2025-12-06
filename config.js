@@ -4,12 +4,11 @@
 // export const SUPABASE_URL = 'https://mfljkyvdadxlrbxlboce.supabase.co';
 // export const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1mbGpreXZkYWR4bHJieGxib2NlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ4MTQwMDUsImV4cCI6MjA4MDM5MDAwNX0.Z4OeacVpO8yM1d1uOWZ6jU2Gl7wgEbhXvAFSqF5pBRs';
 
-import { createClient } from "https://esm.sh/@supabase/supabase-js";
 // config.js
 // ⚠ 記得改成你自己的 Supabase 專案 URL 與 anon 公鑰
 const SUPABASE_URL = "https://mfljkyvdadxlrbxlboce.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1mbGpreXZkYWR4bHJieGxib2NlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ4MTQwMDUsImV4cCI6MjA4MDM5MDAwNX0.Z4OeacVpO8yM1d1uOWZ6jU2Gl7wgEbhXvAFSqF5pBRs";
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
 
 // -------------------------------
 // 2. 載入資料（帶排序）
@@ -84,3 +83,4 @@ document.querySelectorAll("#data-table thead th").forEach((th) => {
 // 5. 預設載入
 // -------------------------------
 loadData();
+
